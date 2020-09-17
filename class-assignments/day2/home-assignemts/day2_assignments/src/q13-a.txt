@@ -1,5 +1,0 @@
-I prefer static than non static because a static method belongs to the class whereas a non-static method belongs to an object of a class which has high priority.
-
-Static runs at compile time that binds early whereas no static bind dynamically at runtime.
-
-So I prefer static and the usage depends based on the usage and requirement.

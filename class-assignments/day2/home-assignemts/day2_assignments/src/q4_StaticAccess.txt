@@ -1,1 +1,0 @@
-Ordinary methods can access any static methods and static variable only by using the object of the class. Else it will prompt an error stating "cannot be resolved to a method/variable"
