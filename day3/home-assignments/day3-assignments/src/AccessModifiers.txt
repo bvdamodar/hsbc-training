@@ -1,0 +1,18 @@
+Access modifiers used in the examples upto now are  default, public, private, and protected. 
+
+1.default is where it is visible to the classes with the package.
+ex - void Vehicle(String name);
+
+2.public is used in almost all class exmaples ans in main class definition.
+ex -  public static void main (String[] args) 
+    { /..
+    }
+
+3. privte is only visible within a class.
+ex- private double salary;// in Empployee.java in class assignment- day3/com.demo.inheritance.demo2
+
+4.protected is visible only classes with in the package and the subclasses of other package.
+ex- protected void whoAmI() 
+    { 
+        System.out.println("My name is Damodar."); 
+    } 

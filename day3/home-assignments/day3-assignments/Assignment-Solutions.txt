@@ -1,0 +1,17 @@
+Day3 - Home Assignments  -  Reference file
+
+Question Number. Location
+
+1. In package name- bird
+
+2. In package name- tv
+
+3. In package interfaces
+
+4. In packages org.demo.client and org.demo.tools
+
+5. In text file AccessModifiers.txt
+
+6. In package name- instanceoff.example
+
+7. In package name- typecast
