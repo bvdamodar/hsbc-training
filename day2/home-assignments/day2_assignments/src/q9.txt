@@ -1,0 +1,1 @@
+An object is an abstract data type created in an heap area and an object reference is address of the object location where its variables or methods are stored in the heap. We cannot access object without its reference.
