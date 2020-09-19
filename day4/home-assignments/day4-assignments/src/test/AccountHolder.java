@@ -1,5 +1,8 @@
 package test;
-
+/**
+ * 
+ * @author bvdam
+ */
 public class AccountHolder {
 
 

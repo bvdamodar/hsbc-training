@@ -1,4 +1,8 @@
 package test;
+/**
+ * 
+ * @author bvdam
+ */
 
 import interfaces.AccountOperationsInterface;
 import exception.AccountBlockedException;

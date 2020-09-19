@@ -1,5 +1,8 @@
 package exception;
-
+/**
+ * 
+ * @author bvdam
+ */
 public class AccountBlockedException extends Exception {
 	@Override
 	public String toString() {

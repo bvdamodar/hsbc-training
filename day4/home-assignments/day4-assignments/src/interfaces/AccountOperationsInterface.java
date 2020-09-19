@@ -1,5 +1,8 @@
 package interfaces;
-
+/**
+ * 
+ * @author bvdam
+ */
 import exception.AccountBlockedException;
 import exception.InsufficientBalanceException;
 
