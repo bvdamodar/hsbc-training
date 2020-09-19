@@ -1,0 +1,24 @@
+Day4 - Home Assignments  -  Reference file
+
+Question Number. Location
+
+1. In src/test/Q1.java
+
+2. In src/test/Q2.java
+
+3. In src/test/Q3.java
+
+4. In src/test/Q4.java
+
+5. Not required because in a nested try-catch block or stacked try-catch block, the unhandled exceptions of inner try-catch block can be handled by outer try-catch block.
+
+6. It is possible when we reference the exception object to Exception superclass.
+
+
+7. In src/test/Q7.java
+
+8. In src/test/Q8.java and 
+
+9. In src/test/NestedTryCatch.java
+
+10. In AccountHolder.java, Account.java, AccountOperationsInterface.java, AccountBlockedException.java, InsufficientBalanceExceptioin.java
