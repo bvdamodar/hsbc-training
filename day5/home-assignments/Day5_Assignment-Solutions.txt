@@ -1,0 +1,15 @@
+Day5 - Home Assignments  -  Reference file
+
+Question Number. Location
+
+1. In directory com/file/attributes
+
+2. In directory com/files/copy/user 
+
+3. In directory com/student all except FileToArray.java
+
+4. In directory com/student/FileToArray.java
+
+5. In directory com/count 
+
+6. All files in directory com/customer
