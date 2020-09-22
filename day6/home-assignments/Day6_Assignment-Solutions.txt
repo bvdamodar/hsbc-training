@@ -1,0 +1,19 @@
+Day6 - Home Assignments  -  Reference file
+
+Question Number. Location
+
+1. In directory com/practice/threads/q1
+
+2. In directory com/practice/threads/q2
+
+3. In directory com/practice/threads/q3
+
+5. In directory com/practice/threads/q5
+
+6.
+
+7. In directory com/practice/threads/q7
+
+8. In directory com/practice/threads/q8
+
+9. In directory com/practice/threads/q9
