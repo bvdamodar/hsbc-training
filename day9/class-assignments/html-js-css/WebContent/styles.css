@@ -1,0 +1,32 @@
+
+body{
+	background-color: cream;
+}
+
+ol {
+	font-size: 20px;
+	color: green;
+	font-style: bold;
+}
+
+ul {
+	font-size: 20px;
+	color: red;
+	font-style: bold;
+}
+
+h2 {
+	color: gold;
+}
+
+table, trs, tds {
+	border-collapse: collapse;
+	border-color: red;
+	border-width: 3px;
+	size: 20%;
+}
+
+th{
+	color: white;
+	background-color: black;
+}
