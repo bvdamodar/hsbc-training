@@ -1,0 +1,37 @@
+
+<style type="text/css">
+	
+	
+	.bhead{
+		position: center;
+		width: 450px;
+	}
+	
+	.regform{
+		position: center;
+	}
+	
+	input{
+		border-color: blue;
+	}
+	
+	h1,h2{
+		color: green;
+		font-family: verdana;
+	}
+	
+	#submitbtn{
+		width: 150dp;
+		height:50dp;
+		align: center;
+		background-color: green;
+		border-color: green;
+		font-size: 20dp;
+		font-style: bold;
+		padding: 3dp;
+		color: white;
+	}
+	
+	
+
+</style>

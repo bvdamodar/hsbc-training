@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Customer SignUp Form</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<script>  
+	function showRegistration(){
+		alert(document.getElementById("i1").value+document.getElementById("i2").value+document.getElementById("i3").value+document.getElementById("i4").value+document.getElementById("i5").value)
+	}
+
+	function validateform(){  
+		var name=document.myform.name.value;  
+		var password=document.myform.password.value;  
+		var mail=document.myform.mail.value;  
+		  
+		if (name==null || name==""){  
+			window.alert("Name cannot be blank.");  
+			name.focus();
+		  	return false;  
+		}else if (mail==null || mail==""){  
+			window.alert("Email cannot be blank.");  
+			mail.focus();
+			return false;  
+		}else if(password==null || password==""){  
+			window.alert("Password cannot be blank.");  
+			password.focus();
+		  	return false;  
+		  } else if(password.length<6){  
+			window.alert("Password must be at least 6 characters long.");  
+			password.focus();
+		  	return false;  
+		  } 
+		return true;
+	}  
+</script>  
+<body>  
+	<br><br>
+	<div class = "regform" align="center">
+		<div class = "bhead" align="center" style="width: 450px;">
+			<hr>
+			<h1>Welcome to ABC Bank</h1>
+			<h2>Customer Registration Form</h2>	
+			<hr size="3" color="grey">
+		</div>
+	
+		<form name="myform" method="post" action="#" onsubmit="return validateform()" >  
+			<table>
+				<tr>
+					<td><label>Enter Name:</label></td><td> <input id="i1" type="text" name="name" placeholder="Name"><br/>  </td>
+				</tr>
+				<tr>
+					<td><label>Enter Password:</label></td><td> <input id="i2" type="password" name="password" placeholder="Passowrd of min. 6 letters"><br/>  </td>
+				</tr>
+				<tr>
+					<td><label>Enter Email:</label></td><td> <input id="i3" type="text" name="mail" placeholder="E-Mail"><br/>  </td>
+				</tr> 
+				<tr>
+					<td><label>Enter Gender:</label></td><td>
+					<input id="i4" type="radio" name="gen" value="Male" checked="true">Male</input>
+					<input type="radio" name="gen" value="Memale">Female</input></td>
+				</tr>
+				<tr>
+					<td><label>Select Country:</label></td>
+					<td>
+						<select id="i5" name = "ctry">
+							<option selected>India</option>
+							<option>China</option>
+							<option>HongKong</option>
+							<option>Bhutan</option>
+							<option>USA</option>
+						</select> <br>
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;<input  id ="submitbtn" onclick="showRegistration();" "margin-left: 200px" type = "submit" name = "submit" value = "Register" ></td>
+				</tr>
+			</table>
+		</form>  
+	</div>
+</body>
+</html>
