@@ -1,1 +1,1 @@
-Day 10 Class assignments impleneted in the training session class.
+Day 10 Class assignments implemented in the training session class.
