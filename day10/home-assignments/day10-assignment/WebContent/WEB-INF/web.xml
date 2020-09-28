@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>day10</display-name>
+  
+	<servlet>
+		<servlet-name>welcome</servlet-name>
+		<servlet-class>com.home.practice.q1.Welcome</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>welcome</servlet-name>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>hello2</servlet-name>
+		<servlet-class>com.home.practice.q2.Hello</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>hello2</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>methods</servlet-name>
+		<servlet-class>com.home.practice.q3.Methods</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>methods</servlet-name>
+		<url-pattern>/methods_demo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>details</servlet-name>
+		<servlet-class>com.home.practice.q4.Details</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>details</servlet-name>
+		<url-pattern>/show_details</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>detailshttp</servlet-name>
+		<servlet-class>com.home.practice.q5.DetailsPrint</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>detailshttp</servlet-name>
+		<url-pattern>/print_details</url-pattern>
+	</servlet-mapping>
+
+	
+	<servlet>
+		<servlet-name>calc</servlet-name>
+		<servlet-class>com.home.practice.q6.Calculator</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>calc</servlet-name>
+		<url-pattern>/nums</url-pattern>
+	</servlet-mapping>
+</web-app>
