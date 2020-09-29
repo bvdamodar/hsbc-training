@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<style type="text/css">
+	input {
+	font-family: sans-serif;
+	font-size: 15px;
+}
+
+	td {
+	font-size: 17px;
+	font-family: cursive;
+}
+
+	.btn{
+	color: white;
+	font-style: bold;
+	font-size: 16px;
+	background-color: black;
+	padding: 7px;
+	border-radius: 10px; 
+	margin-left: 90px;	
+}
+
+	.frm{
+	margin-left: 500px;
+	margin-right: 510px;
+	float: left;
+	align : center; 
+	border: 2px sold black;
+}
+</style>
+</head>
+<body bgcolor="grey">
+	<center> <h1 style="color: yellow ;font-family: sans-serif;  font-size: 59px;">Login Form-Servlet</h1></center>
+	<hr size="3" color="black"><br>
+	<form action="loginServlet" method="GET" class="frm">
+		<table>
+			<tr>
+				<td>Username:</td>
+				<td><input type="text" name="uname"></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="password" name="pwd"></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td></td><td><input type="submit" name="Sum" value="Submit" class ="btn" ></td>&nbsp;&nbsp;
+				</tr>
+		</table>
+	</form>
+	</center>
+</body>
+</html>

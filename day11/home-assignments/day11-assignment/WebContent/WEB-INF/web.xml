@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>day11-assignment</display-name>
+  <servlet>
+    <description></description>
+    <display-name>PrintServlet</display-name>
+    <servlet-name>PrintServlet</servlet-name>
+    <servlet-class>com.hsbc.tr.practice.q1.PrintServlet</servlet-class>
+    <init-param>
+      <param-name>username</param-name>
+      <param-value>bvdam</param-value>
+    </init-param>
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>Dam*2920</param-value>
+    </init-param>
+    <init-param>
+      <param-name>jdbcurl</param-name>
+      <param-value>org.apache.derby.Driver</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PrintServlet</servlet-name>
+    <url-pattern>/printServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.hsbc.tr.practice.q2.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Welcome</display-name>
+    <servlet-name>Welcome</servlet-name>
+    <servlet-class>com.hsbc.tr.practice.q2.Welcome</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Welcome</servlet-name>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+</web-app>
