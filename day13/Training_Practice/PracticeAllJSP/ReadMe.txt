@@ -1,0 +1,1 @@
+The Project PracticeAllJSP is created to implement all the concepts covered till date along with some more features. It initially gets requests from user about technology and redirects accordingly to accept and store requests, user signing up , signing in and checking with informing validations and user sign out  stored in Derby Database.
