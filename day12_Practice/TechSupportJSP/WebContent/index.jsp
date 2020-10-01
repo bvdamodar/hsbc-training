@@ -48,6 +48,6 @@
 			</tr>
 		</table>
 	</form>
-	<a href="listrequets">View Requests</a>
+	<a href="listrequests">View Requests</a>
 </body>
 </html>

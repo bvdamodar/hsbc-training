@@ -27,21 +27,20 @@ public class CustomerAppController extends HttpServlet {
 		String action = request.getParameter("action");
 
 		if (action.equals("register")) {
-
-			String fname = request.getParameter("fname");
-			String lname = request.getParameter("lname");
+			String fname = request.getParameter("firstName");
+			String lname = request.getParameter("lastName");
+			String phone = request.getParameter("phoneNumber");
 			String email = request.getParameter("email");
-			String phone = request.getParameter("phone");
 
-			TechService cs = new TechService(dao);
-			
-			if (cs.registerUser(email, fname, lname, phone)) {
+			TechService service = new TechService(dao);
+
+			if (service.registerUser(email, fname, lname, phone)) {
 				// save the request
 				String mail = (String) request.getSession().getAttribute("email");
 				String os_name = (String) request.getSession().getAttribute("os");
 				String prob = (String) request.getSession().getAttribute("problem");
 				String s_ware = (String) request.getSession().getAttribute("software");
-				cs.registerReq(mail, os_name, s_ware, prob);
+				service.registerComplaint(mail, os_name, s_ware, prob);
 				request.getRequestDispatcher("/confirm.jsp").forward(request, response);
 			}
 
@@ -50,11 +49,11 @@ public class CustomerAppController extends HttpServlet {
 			String os = request.getParameter("os");
 			String software = request.getParameter("software");
 			String problem = request.getParameter("problem");
-
-			TechService cs = new TechService(dao);
-			boolean emailValid = cs.registerReq(email, os, software, problem);
+			
+			TechService service = new TechService(dao);
+			boolean emailValid = service.validateUser(email);
 			if (emailValid) {
-				if (cs.registerReq(email, os, software, problem)) {
+				if (service.registerComplaint(email, os, software, problem)) {
 					request.getRequestDispatcher("/confirm.jsp").forward(request, response);
 				}
 			} else {

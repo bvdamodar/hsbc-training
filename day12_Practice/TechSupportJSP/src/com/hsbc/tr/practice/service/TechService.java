@@ -16,22 +16,35 @@ public class TechService {
 		this.dao = dao;
 	}
 
-	public boolean registerUser(String email,String fname,String lname,String phone) {
-		String resp = dao.saveUser(email, fname, lname, phone);
-		return resp.equals("success");
-	}
 	public boolean validateUser(String email) {
-		int r = dao.checkUser(email);
-		return r == 1;
+		int response = dao.checkUser(email);
+		if (response == 1) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
-	public boolean registerReq(String email, String os, String sw, String prob) {
-		String resp = dao.saveRequest(email, os, sw, prob);
-		return resp.equals("success");
+	public boolean registerUser(String email, String fname, String lname, String phone) {
+		String response=dao.saveUser(email, fname, lname, phone);
+		if(response.equals("success")) {
+		return true;
+		}else {
+			return false;
+		}
 	}
 
-	public List<String> listAll() {		
-		return dao.listAllReq();
+	public boolean registerComplaint(String email, String os, String software, String problem) {
+		String response=dao.saveRequest(email, os, software, problem);
+		if(response.equals("success")) {
+		return true;
+		}else {
+			return false;
+		}
 	}
-	
+
+	public List<String> listAll() {
+		// TODO Auto-generated method stub
+		return dao.listAllRequests();
+	}
 }

@@ -8,6 +8,6 @@
 </head>
 <body>
 
-<a href="listrequets">List all Requests</a>
+<a href="listrequests">List all Requests</a>
 </body>
 </html>

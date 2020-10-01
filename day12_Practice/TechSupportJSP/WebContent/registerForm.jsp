@@ -19,15 +19,15 @@
 			</tr>
 			<tr>
 				<td>First Name:</td>
-				<td><input type="text" name="fname" size=30 ><br></td>
+				<td><input type="text" name="firstName" size=30 ><br></td>
 			</tr>
 			<tr>
 				<td>Last Name:</td>
-				<td><input type="text" name="lname" size=30 ><br></td>
+				<td><input type="text" name="lastName" size=30 ><br></td>
 			</tr>
 			<tr>
 				<td>Phone Number:</td>
-				<td><input type="text" name="phone" size=30 ><br></td>
+				<td><input type="text" name="phoneNumber" size=30 ><br></td>
 			</tr>
 			<br>
 			<tr>

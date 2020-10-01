@@ -6,13 +6,14 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>Register</display-name>
-    <servlet-name>Register</servlet-name>
+    <display-name>CustomerAppController</display-name>
+    <servlet-name>CustomerAppController</servlet-name>
     <servlet-class>com.hsbc.tr.practice.servlet.CustomerAppController</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Register</servlet-name>
+    <servlet-name>CustomerAppController</servlet-name>
     <url-pattern>/register</url-pattern>
     <url-pattern>/listrequets</url-pattern>
   </servlet-mapping>
+  
 </web-app>
