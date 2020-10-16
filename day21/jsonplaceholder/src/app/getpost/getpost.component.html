@@ -1,0 +1,6 @@
+<h1>Get Post Details </h1>
+<hr>
+<input type="text" name="postId" placeholder="Enter Id" #inputData>
+<button (click)="showPost(inputData.value)">Get Details</button>
+<hr>
+<h2>{{post.userId}}&nbsp;{{post.id}}&nbsp;{{post.title}}</h2>
