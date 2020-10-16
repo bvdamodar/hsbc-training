@@ -1,0 +1,30 @@
+<div>
+    <button (click)="onClick()">Show Table</button>
+</div>
+<div *ngIf="dataFlag; then listData else tableData"></div>
+    <ng-template #listData>
+        <h1>Employees</h1>
+        <hr>
+        <ul>
+            <li *ngFor="let emp of empList">{{emp.name}}</li>
+        </ul>
+    </ng-template>
+    <br>
+    <ng-template #tableData>
+        <h1>Employees Table</h1>
+        <hr>
+        <table style="font-size: 20px ;border: 2px solid black;">
+            <tr style="font-size: 25px ;font-weight: bold ; border-bottom: black;">
+                <td>ID</td>
+                <td>Name</td>
+                <td>City</td>
+                <td>Salary</td>
+            </tr>
+            <tr *ngFor="let emp of empList">
+                <td>{{emp.empId}}&nbsp;</td>
+                <td>{{emp.name}}</td>
+                <td>{{emp.city}}</td>
+                <td>{{emp.salary}}</td>
+            </tr><br>
+        </table>
+    </ng-template>

@@ -1,0 +1,8 @@
+<div *ngIf="dataFlag; then listData "></div>
+    <ng-template #listData>
+        <h1>Employee ID's</h1>
+        <hr>
+        <ul>
+            <li *ngFor="let emp of empList" (click)="findEmp(emp.empId)" >{{emp.empId}}</li>
+        </ul>
+    </ng-template>
