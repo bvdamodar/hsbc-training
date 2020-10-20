@@ -1,0 +1,10 @@
+<h1>Custoemers List</h1>
+<hr>
+
+<table>
+    <tr *ngFor="let cust of custList" (click)="listAll()">
+        <td>{{cust.custId}}&nbsp;</td>
+        <td>{{cust.custName}}</td>
+        <td>{{cust.mobile}}</td>
+    </tr><br>
+</table>
